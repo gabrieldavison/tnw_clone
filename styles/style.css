@@ -1,0 +1,116 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* styles site links */
+
+.site-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 0.9em;
+  background-color: black;
+  color: white;
+}
+
+.site-links .right {
+  text-align: end;
+}
+.site-links ul {
+  padding: 0;
+  margin: 0.5em 0;
+}
+nav li {
+  display: inline-block;
+  list-style: none;
+}
+.site-links .left li {
+  margin-left: 1em;
+}
+.site-links .right li {
+  margin-right: 1em;
+}
+
+/* styles site categories */
+
+.site-categories {
+  background-color: rgb(212, 212, 212);
+}
+
+.site-categories ul {
+  padding: 0;
+  margin: 0;
+}
+
+.site-categories li {
+  margin: 1em 0 1em 1em;
+}
+
+/* styles featured articles */
+.main-feature {
+  background-color: red;
+  grid-area: main;
+}
+
+.sub-feature {
+  background-color: blue;
+}
+
+.featured-articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "main main 1fr"
+    "main main 1fr";
+  height: 50vh;
+}
+
+/* styles latest news */
+.latest-news {
+  width: 75%;
+  margin: auto;
+}
+
+.latest-news .grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.news-item {
+  background-color: yellow;
+}
+
+/* styles funding rounds */
+
+.funding-rounds {
+  width: 75%;
+  margin: auto;
+}
+
+.funding-rounds .grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.funding-item {
+  background-color: pink;
+}
+
+/* styles article categories */
+.article-categories {
+  width: 75%;
+  margin: auto;
+}
+
+.article-category {
+  background-color: whitesmoke;
+}
+
+.article-categories .grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
